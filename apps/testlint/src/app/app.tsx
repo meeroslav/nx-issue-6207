@@ -4,6 +4,12 @@ import { ReactComponent as Logo } from './logo.svg';
 import star from './star.svg';
 
 export function App() {
+  const _nothing = [1, 2, 3].map((i) => {
+    if (i > 0) {
+      return 1;
+    }
+  });
+
   return (
     <div className={styles.app}>
       <header className="flex">
